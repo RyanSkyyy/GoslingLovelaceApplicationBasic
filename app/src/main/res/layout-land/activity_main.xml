@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.example.wutianyu.goslinglovelace.MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ada"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="Ada Lovelace"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="16dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="During a nine-month period in 1842–43, Lovelace translated the Italian mathematician Luigi Menabrea's article on Babbage's newest proposed machine, the Analytical Engine. With the article, she appended a set of notes.[58] Explaining the Analytical Engine's function was a difficult task, as even many other scientists did not really grasp the concept and the British establishment was uninterested in it.[59] Lovelace's notes even had to explain how the Analytical Engine differed from the original Difference Engine.[60] Her work was well received at the time; the scientist Michael Faraday described himself as a supporter of her writing.[61]  The notes are around three times longer than the article itself and include (in Section G[62]), in complete detail, a method for calculating a sequence of Bernoulli numbers with the Engine, which could have run correctly had Babbage's Analytical Engine been built.[63] (Only his Difference Engine has been built, completed in London in 2002.[64]) Based on this work Lovelace is now widely considered the first computer programmer[1] and her method is recognised as the world's first computer program.[65]  Section G also contains Lovelace's dismissal of artificial intelligence. She wrote that &quot;The Analytical Engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform. It can follow analysis; but it has no power of anticipating any analytical relations or truths.&quot; This objection has been the subject of much debate and rebuttal, for example by Alan Turing in his paper &quot;Computing Machinery and Intelligence&quot;.[66]" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
